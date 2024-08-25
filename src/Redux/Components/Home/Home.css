@@ -1,0 +1,37 @@
+.navbar_css {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden-navbar {
+    transform: translateY(-100%);
+}
+
+.visible-navbar {
+    transform: translateY(0);
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 5px;
+    /* Adjust height as needed */
+    background: #ff5733;
+    /* Adjust color */
+    transform-origin: 0 0;
+    /* Scale from the left */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}

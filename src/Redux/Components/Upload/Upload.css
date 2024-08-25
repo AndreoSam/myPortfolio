@@ -1,0 +1,30 @@
+.upload_css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.upload_base_css_1 {
+  width: 500px;
+}
+
+.upload_base_css {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 10px;
+  width: 100%;
+  padding: 50px;
+}
+
+.link_css,
+.img_css,
+.title_css,
+.skills_css {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

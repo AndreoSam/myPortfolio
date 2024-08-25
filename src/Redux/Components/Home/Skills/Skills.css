@@ -1,0 +1,19 @@
+.skill_main_css{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+ cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills_cards:hover{
+     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 204, 255, 0.76);
+}

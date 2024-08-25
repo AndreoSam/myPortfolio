@@ -1,0 +1,83 @@
+.about_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    /* Ensure text color is white */
+}
+
+.aboutcss {
+    text-align: center;
+}
+
+.aboutcss_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* Ensure text stays in a single line */
+    margin-top: 50px;
+}
+
+.aboutcss_2_h3 {
+    font-size: 2.5em;
+    /* Adjust font size as needed */
+    margin: 0;
+    color: white;
+    /* Text color set to white */
+    white-space: nowrap;
+    /* Ensure text stays in a single line */
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    /* Space around the text */
+    animation: moveShadow 3s linear infinite;
+    /* Add the shadow animation */
+}
+
+@keyframes moveShadow {
+    0% {
+        text-shadow:
+            0 0 0 rgba(255, 255, 255, 0),
+            /* No shadow initially */
+            0 0 0 rgba(255, 255, 255, 0),
+            0 0 0 rgba(255, 255, 255, 0),
+            0 0 0 rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        text-shadow:
+            0 0 8px rgba(255, 255, 255, 0.8),
+            /* Light shadow at the end */
+            0 0 16px rgba(255, 255, 255, 0.6),
+            0 0 24px rgba(255, 255, 255, 0.4),
+            0 0 32px rgba(255, 255, 255, 0.2);
+        transform: translateX(20px);
+        /* Move the shadow from right to left */
+    }
+}
+
+.imgcss_1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgcss {
+    border-radius: 50%;
+    /* Ensure image stays round */
+    width: 375px;
+    /* Increase image size */
+    height: 375px;
+    /* Increase image size */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgcss_1:hover .imgcss {
+    transform: scale(1.1);
+    /* Slightly enlarge image */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* Add shadow on hover */
+}
